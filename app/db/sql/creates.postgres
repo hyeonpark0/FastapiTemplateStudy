@@ -1,0 +1,9 @@
+CREATE TABLE courses (
+  id VARCHAR(50) NOT NULL,
+  title VARCHAR(100) NOT NULL,
+  description VARCHAR(200) NULL,
+  hours INT NOT NULL,
+  price DECIMAL(5,2) NOT NULL,
+  PRIMARY KEY (id)
+);
+

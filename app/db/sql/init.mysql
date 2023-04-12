@@ -1,0 +1,17 @@
+-- CREATE SCHEMA `academy` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ;
+
+CREATE TABLE `academy`.`courses` (
+  `id` VARCHAR(50) NOT NULL,
+  `title` VARCHAR(100) NOT NULL,
+  `description` VARCHAR(200) NULL,
+  `hours` INT NOT NULL,
+  `price` DECIMAL(5,2) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `title_UNIQUE` (`title` ASC) VISIBLE
+);
+
+INSERT INTO `academy`.`courses`(`id`, `title`, `description`, `hours`, `price`) VALUES ('61d21fdc64a21a99efe0d8f7','Ronelon Talley','Exercitation ullamco ad sint laborum occaecat ex velit anim. Occaecat deserunt ipsum in quis dolor occaecat sit velit consectetur fugiat magna pariatur ullamco magna. Eu laboris sit ex et.',5,105.5);
+INSERT INTO `academy`.`courses`(`id`, `title`, `description`, `hours`, `price`) VALUES ('61d21fdce151182e6d561cd8','Comvoy Hull','Adipisicing culpa ex incididunt adipisicing consectetur proident est nisi laborum laborum proident.',2,65.5);
+INSERT INTO `academy`.`courses`(`id`, `title`, `description`, `hours`, `price`) VALUES ('61d21fdc00988e6ca9284474','Applidec Lamb','Dolor velit laborum ex aute dolore pariatur exercitation magna. Aute nisi veniam qui laboris cillum adipisicing ut occaecat ipsum aliquip pariatur dolor tempor.',1,87);
+INSERT INTO `academy`.`courses`(`id`, `title`, `description`, `hours`, `price`) VALUES ('61d21fdc505ac83890e2edb0','Noralex Contreras','Ullamco nostrud enim anim fugiat. Non in elit reprehenderit do aliqua pariatur cupidatat aliqua nisi nostrud officia officia qui ipsum.',3,50.5);
+INSERT INTO `academy`.`courses`(`id`, `title`, `description`, `hours`, `price`) VALUES ('61d21fdc68ead7e2525d8326','Waretel Russell','Anim excepteur ex incididunt consectetur ipsum id incididunt sit. Dolor nostrud anim ea ad ullamco duis aliqua velit in. Incididunt sit fugiat.',7,300);
